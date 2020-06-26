@@ -11,7 +11,12 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<header></header>
+<div class="my-5 py-5">
+</div>
+<header class="sticky-top">
+
+    {{ menu('top_menu', 'bootstrap4') }}
+</header>
 <main>
     @yield('content')
 </main>
