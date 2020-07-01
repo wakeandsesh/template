@@ -33,6 +33,11 @@
             </li>
         @endif
     @endforeach
+    <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary ml-auto mr-2" data-toggle="modal" data-target="#top_formModal">
+            Запустить модальное окно
+        </button>
+
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

@@ -15,12 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@home')->name('home');
 Route::get('category/{slug}', 'CategoryController@category')->name('category');
+/*Contact_form*/
+Route::get('/send/contact_form','ContactController@contact_form');
 
+Route::post('/send/contact_form','ContactController@contact_form_send');
+/*Contact_form end*/
 
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+
 
 
 
